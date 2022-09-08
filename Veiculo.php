@@ -1,6 +1,6 @@
 <?php
 
-class Veiculo {
+abstract class Veiculo {
 
     protected $color;
     private $engine;
