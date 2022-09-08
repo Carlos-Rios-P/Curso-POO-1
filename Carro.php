@@ -1,11 +1,7 @@
 <?php
 
-class Carro {
-    public $color;
-    public $engine;
-
-    public function getEngine($type = 'horsepower')
-    {
-        return $this->engine . " $type";
-    }
+require_once("Veiculo.php");
+class Carro extends Veiculo {
+    public $portas;
+    
 }
