@@ -4,7 +4,7 @@ require_once("Carro.php");
 require_once("Motocicleta.php");
 
 $ferrari = new Carro('Vermelho', 2);
-$ferrari->portas =  2;
+$ferrari->setPortas(3);
 
 // $mustang =  new Carro;
 
@@ -12,10 +12,7 @@ $ferrari->portas =  2;
 // $mustang->engine =  400;
 // $mustang->portas =  4;
 
-// $honda = new Motocicleta;
-
-// $honda->color =  'Verde';
-// $honda->engine =  400;
+$honda = new Motocicleta('Azul', 500);
 
 
-echo $ferrari->color;
+echo $ferrari->getPortas();
