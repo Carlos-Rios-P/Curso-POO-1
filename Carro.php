@@ -4,8 +4,8 @@ class Carro {
     public $color;
     public $engine;
 
-    public function getEngine()
+    public function getEngine($type = 'horsepower')
     {
-        return $this->engine . " horsepower";
+        return $this->engine . " $type";
     }
 }
