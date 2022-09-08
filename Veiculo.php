@@ -1,6 +1,8 @@
 <?php
 
-abstract class Veiculo {
+require_once('IVeiculo.php');
+
+abstract class Veiculo implements IVeiculo{
 
     protected $color;
     private $engine;
