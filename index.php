@@ -14,5 +14,4 @@ $ferrari->setPortas(3);
 
 $honda = new Motocicleta('Azul', 500);
 
-
-echo $ferrari->getPortas();
+// echo $ferrari->getPortas();

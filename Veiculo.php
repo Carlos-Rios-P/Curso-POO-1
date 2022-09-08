@@ -2,8 +2,8 @@
 
 class Veiculo {
 
-    public $color;
-    public $engine;
+    protected $color;
+    private $engine;
 
     public function __construct($color, $engine)
     {
