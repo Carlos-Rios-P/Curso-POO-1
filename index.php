@@ -1,13 +1,13 @@
 <?php
 
-$input = array(30, 15, 20, 17);
+class People 
+{
+    public function getHello($name) 
+    {
+        return "Olá $name!";
+    }
+}
 
-$filtro = function(int $age) {
-    return ($age > 18);
-};
+$p = new People;
 
-$output = array_filter($input, function(int $age) {
-    return ($age > 18);
-});
-
-print_r($output);
+echo $p->getHello("Carlos");
