@@ -1,7 +1,11 @@
 <?php
 
 class Carro {
-    public $marca;
-    public $cor;
-    public $motor;
+    public $color;
+    public $engine;
+
+    public function getEngine()
+    {
+        return $this->engine . " horsepower";
+    }
 }

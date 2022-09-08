@@ -4,14 +4,12 @@ require_once("Carro.php");
 
 $ferrari = new Carro;
 
-$ferrari->marca =  'Ferrari';
-$ferrari->cor =  'Vermelho';
-$ferrari->motor =  300;
+$ferrari->color =  'Vermelho';
+$ferrari->engine =  300;
 
 $mustang =  new Carro;
 
-$mustang->marca =  'Mustang';
-$mustang->cor =  'Branco';
-$mustang->motor =  400;
+$mustang->color =  'Branco';
+$mustang->engine =  400;
 
-var_dump($mustang);
+echo $mustang->getEngine();
