@@ -1,13 +1,17 @@
 <?php
 
-class People 
-{
-    public function getHello($name) 
-    {
-        return "Olá $name!";
-    }
-}
+require_once("Carro.php");
 
-$p = new People;
+$ferrari = new Carro;
 
-echo $p->getHello("Carlos");
+$ferrari->marca =  'Ferrari';
+$ferrari->cor =  'Vermelho';
+$ferrari->motor =  300;
+
+$mustang =  new Carro;
+
+$mustang->marca =  'Mustang';
+$mustang->cor =  'Branco';
+$mustang->motor =  400;
+
+var_dump($mustang);
